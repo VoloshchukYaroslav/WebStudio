@@ -7,3 +7,168 @@
     --team-background: #F5F4FA;
     --footer-background: #2F303A;
 }
+body{
+    font-family: 'Roboto';
+}
+.logo{
+    color: #000;
+    font-family: 'Raleway';
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.04875rem;
+}
+span{
+    color: #2196F3;
+    font-family: 'Raleway';
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.04875rem;
+}
+.header-link-span{
+    color: #2196F3;
+    font-family: 'Roboto';
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.0175rem;
+}
+.header-link{
+    color: #212121;
+    font-family: 'Roboto';
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.0175rem;
+}
+.info-link-span{
+    color: #2196F3;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.0175rem;
+}
+.info-link{
+    color: #757575;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.0175rem;
+}
+.service{
+    background: #2F303A;
+}
+.service-title{
+    color: #FFF;
+    text-align: center;
+    font-size: 2.75rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 3.75rem; /* 136.364% */
+    letter-spacing: 0.165rem;
+    text-transform: uppercase;
+}
+.main-button{
+    border-radius: 0.25rem;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.button-info{
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.875rem; /* 187.5% */
+    letter-spacing: 0.06rem;
+}
+.about-us-title{
+    color: #212121;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.02625rem;
+    text-transform: uppercase;
+}
+.about-us-info{
+    color: #757575;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 171.429% */
+    letter-spacing: 0.02625rem;
+}
+.our-work-tite{
+    color: #212121;
+    text-align: center;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.0675rem;
+}
+.team{
+    background: #F5F4FA;
+}
+.team-title{
+    color: #212121;
+    text-align: center;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.0675rem;
+}
+.team-list-title{
+    color: #212121;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.03rem;
+}
+.team-list-info{
+    color: #757575;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.03rem;
+}
+footer{
+    background: #2F303A;
+}
+.logo-footer{
+    color: #FFF;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.04875rem;
+}
+.address-info{
+    color: #FFF;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 171.429% */
+    letter-spacing: 0.02625rem;
+}
+.info-item-link{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 171.429% */
+    letter-spacing: 0.02625rem;
+}
