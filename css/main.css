@@ -30,7 +30,6 @@ span {
 }
 .header-link-span {
   color: #2196f3;
-  font-family: "Roboto";
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -79,8 +78,6 @@ span {
   border-radius: 0.25rem;
   background: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
-.button-info {
   color: #fff;
   text-align: center;
   font-size: 1rem;
