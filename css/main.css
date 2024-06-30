@@ -8,8 +8,20 @@
   --footer-background: #2f303a;
   --tell-color: rgba(255, 255, 255, 0.6);
 }
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid green;
+}
 body {
   font-family: "Roboto";
+}
+header {
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .logo {
   color: var(--logo-color);
@@ -49,6 +61,8 @@ body {
 }
 .service {
   background: var(--footer-background);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .service-title {
   color: var(--main-background);
@@ -70,6 +84,9 @@ body {
   line-height: 1.87;
   letter-spacing: 0.96px;
 }
+.about-us {
+  padding-top: 94px;
+}
 .about-us-title {
   color: var(--title-color);
   font-size: 14px;
@@ -85,6 +102,10 @@ body {
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
+.our-work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .our-work-tite {
   color: var(--title-color);
   text-align: center;
@@ -95,6 +116,8 @@ body {
 }
 .team {
   background: var(--team-background);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team-title {
   color: var(--title-color);
@@ -122,6 +145,8 @@ body {
 }
 .footer {
   background: var(--footer-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
   color: var(--main-background);
