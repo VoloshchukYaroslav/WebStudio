@@ -230,6 +230,6 @@ address {
 .footer-info-list {
   margin-top: 9px;
 }
-.info-item {
+.footer-info-item:first-child {
   margin-bottom: 9px;
 }
