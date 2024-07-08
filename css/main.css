@@ -26,7 +26,6 @@ header {
 .header-info {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 .logo {
   color: var(--logo-color);
@@ -66,6 +65,10 @@ header {
   display: flex;
   gap: 50px;
 }
+.info-item {
+  display: flex;
+  align-items: center;
+}
 .header-navigation {
   margin-right: auto;
 }
@@ -80,12 +83,10 @@ header {
   background: var(--footer-background);
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
 .service-title {
   width: 696px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
   color: var(--main-background);
   text-align: center;
   font-size: 44px;
@@ -97,7 +98,6 @@ header {
   margin-right: auto;
 }
 .service-button {
-  flex-shrink: 0;
   border-radius: 4px;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -108,12 +108,14 @@ header {
   line-height: 1.87;
   letter-spacing: 0.96px;
   margin-top: 30px;
+  padding: 10px 32px;
 }
 .about-us {
   padding-top: 94px;
 }
 .about-us-list {
   display: flex;
+  gap: 30px;
 }
 .about-us-title {
   color: var(--title-color);
@@ -168,12 +170,10 @@ header {
 }
 .team-list {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
-.team-item {
+.team-img {
   width: 270px;
-  height: 260px;
-  flex-shrink: 0;
 }
 .team-item-container {
   background: var(--main-background);
@@ -222,4 +222,14 @@ header {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
+}
+address {
+  margin-top: 20px;
+  font-style: normal;
+}
+.footer-info-list {
+  margin-top: 9px;
+}
+.info-item {
+  margin-bottom: 9px;
 }
