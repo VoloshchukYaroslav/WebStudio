@@ -114,9 +114,15 @@ header {
   gap: 30px;
   flex-wrap: wrap;
 }
+.goods-img {
+  width: 100%;
+}
 .goods-wrap {
   border: 1px solid #EEE;
   padding: 24px 20px;
+}
+.goods-item {
+  flex-basis: calc((100% - 60px) / 3);
 }
 .goods-title {
   color: var(--title-color);
