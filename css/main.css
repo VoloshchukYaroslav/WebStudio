@@ -125,19 +125,19 @@ header {
   border-radius: 4px;
   background: #F5F4FA;
   display: block;
-  background-image: url(../img/antenna\ 1.png);
+  background-image: url(../img/antenna1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70px;
 }
 .about-us-item:nth-child(2):before {
-  background-image: url(../img/clock\ 1.png);
+  background-image: url(../img/clock1.png);
 }
 .about-us-item:nth-child(3):before {
-  background-image: url(../img/diagram\ 1.png);
+  background-image: url(../img/diagram1.png);
 }
 .about-us-item:nth-child(4):before {
-  background-image: url(../img/astronaut\ 1.png);
+  background-image: url(../img/astronaut1.png);
 }
 .about-us-title {
   color: var(--title-color);
