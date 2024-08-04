@@ -49,6 +49,9 @@ header {
   display: flex;
   gap: 50px;
 }
+.header-span {
+  color: var(--accent-color);
+}
 .header-link {
   color: var(--title-color);
   font-size: 14px;
@@ -92,6 +95,7 @@ header {
 }
 .filter-button {
   padding: 6px 25px;
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 .filter-button:hover{
   background: var(--accent-color);
@@ -119,6 +123,7 @@ header {
 .goods-wrap {
   border: 1px solid #EEE;
   padding: 24px 20px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 .goods-item {
   flex-basis: calc((100% - 60px) / 3);
