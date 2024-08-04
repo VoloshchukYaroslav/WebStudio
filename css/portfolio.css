@@ -95,11 +95,11 @@ header {
 }
 .filter-button {
   padding: 6px 25px;
-  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 .filter-button:hover{
   background: var(--accent-color);
   color: var(--main-background);
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 .filter-button {
   border-radius: 4px;
@@ -123,10 +123,13 @@ header {
 .goods-wrap {
   border: 1px solid #EEE;
   padding: 24px 20px;
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+
 }
 .goods-item {
   flex-basis: calc((100% - 60px) / 3);
+}
+.goods-item:hover {
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 .goods-title {
   color: var(--title-color);
