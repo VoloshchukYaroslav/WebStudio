@@ -58,11 +58,21 @@ header {
   line-height: 1.14;
   letter-spacing: 0.28px;
 }
+.info-link {
+  display: flex;
+  align-items: center;
+}
 .header-link:hover{
   color: var(--accent-color);
 }
 .info-link:hover{
   color: var(--accent-color);
+  .mail-icon {
+    fill: #2196f3;
+  }
+  .phone-icon {
+    fill: var(--accent-color);
+  }
 }
 .info-list {
   display: flex;
@@ -81,6 +91,18 @@ header {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
+}
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--text-color);
+}
+.phone-icon {
+  width: 10px;
+  height: 16px;
+  fill: var(--text-color);
+  margin-right: 10px;
 }
 .service {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../img/service.jpg);
@@ -206,6 +228,7 @@ header {
   padding-top: 30px;
   padding-bottom: 30px;
   border-radius: 0 0 4px 4px;
+  text-align: center;
 }
 .team-item {
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
@@ -227,6 +250,19 @@ header {
   font-weight: 400;
   line-height: 1.18;
   letter-spacing: 0.48px;
+}
+.icon-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #2196f3;
+}
+.team-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--text-color);
+  margin-right: 10px;
+  margin-top: 16px;
 }
 .footer {
   background: var(--footer-background);
