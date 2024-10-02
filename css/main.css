@@ -62,10 +62,12 @@ header {
   display: flex;
   align-items: center;
 }
-.header-link:hover{
+.header-link:hover,
+.header-link:focus{
   color: var(--accent-color);
 }
-.info-link:hover{
+.info-link:hover,
+.info-link:focus{
   color: var(--accent-color);
   .mail-icon {
     fill: #2196f3;
@@ -255,8 +257,9 @@ header {
 .icon-list {
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
-.icon-item {
+.icon-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -264,15 +267,13 @@ header {
   justify-content: center;
   align-items: center;
 }
-.icon-item:first-child {
-  margin-left: 32px;
-}
 .team-icon {
   width: 20px;
   height: 20px;
   fill: var(--text-color);
 }
-.icon-item:hover {
+.icon-link:hover,
+.icon-link:focus {
   background-color: var(--accent-color);
   .team-icon {
     fill: #fff;
@@ -297,7 +298,7 @@ header {
   display: flex;
   gap: 30px;
 }
-.clients-item {
+.clients-link {
   width: 170px;
   height: 92px;
   border-radius: 4px;
@@ -311,7 +312,8 @@ header {
   height: 60px;
   fill: var(--text-color);
 }
-.clients-item:hover {
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid var(--accent-color);
   .clients-icon {
     fill: #2196f3;
@@ -370,7 +372,7 @@ address {
   display: flex;
   gap: 10px;
 }
-.social-item {
+.social-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -384,6 +386,7 @@ address {
   height: 20px;
   fill: var(--main-background);
 }
-.social-item:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
 }

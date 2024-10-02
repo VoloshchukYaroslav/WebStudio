@@ -59,10 +59,12 @@ header {
   line-height: 1.14;
   letter-spacing: 0.28px;
 }
-.header-link:hover{
+.header-link:hover,
+.header-link:focus{
   color: var(--accent-color);
 }
-.info-link:hover{
+.info-link:hover,
+.info-link:focus{
   color: var(--accent-color);
   .mail-icon {
     fill: #2196f3;
@@ -114,7 +116,8 @@ header {
 .filter-button {
   padding: 6px 25px;
 }
-.filter-button:hover{
+.filter-button:hover,
+.filter-button:focus{
   background: var(--accent-color);
   color: var(--main-background);
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
@@ -216,7 +219,7 @@ address {
   display: flex;
   gap: 10px;
 }
-.social-item {
+.social-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -230,6 +233,7 @@ address {
   height: 20px;
   fill: var(--main-background);
 }
-.social-item:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
 }
