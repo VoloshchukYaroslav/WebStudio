@@ -6,6 +6,7 @@
   --text-color: #757575;
   --team-background: #f5f4fa;
   --footer-background: #2f303a;
+  --svg-fill: #AFB1B8;
   --tell-color: rgba(255, 255, 255, 0.6);
 }
 .container {
@@ -270,7 +271,7 @@ header {
 .team-icon {
   width: 20px;
   height: 20px;
-  fill: var(--text-color);
+  fill: var(--svg-fill);
 }
 .icon-link:hover,
 .icon-link:focus {
@@ -310,7 +311,7 @@ header {
 .clients-icon {
   width: 106px;
   height: 60px;
-  fill: var(--text-color);
+  fill: var(--svg-fill);
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -327,6 +328,7 @@ header {
 .footer-box {
   display: flex;
   gap: 70px;
+  align-items: baseline;
 }
 .logo-footer {
   color: var(--main-background);
