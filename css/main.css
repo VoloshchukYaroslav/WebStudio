@@ -203,6 +203,7 @@ header {
 }
 .our-work-item {
   text-align: center;
+  position: relative;
 }
 .our-work-img {
   width: 370px;
@@ -211,8 +212,9 @@ header {
 .work-link {
   width: 370px;
   height: 70px;
-  position: relative;
-  top: -70px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   background-color: rgba(47, 48, 58, 0.80);
   display: flex;
   justify-content: center;
