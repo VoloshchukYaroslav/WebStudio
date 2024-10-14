@@ -59,7 +59,7 @@
         <section class="service">
           <div class="container">
               <h1 class="service-title">Ефективні рішення для вашого бізнесу</h1>
-              <button type="button" class="service-button">Замовити послугу</button>
+              <button type="button" class="service-button" data-modal-open>Замовити послугу</button>
           </div>
         </section>
         <section class="about-us">
@@ -379,5 +379,50 @@
       </div>
       </address>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <form class="modal-form">
+          <button type="button" class="modal-close" data-modal-close>
+            <svg class="modal-cross">
+              <use href="./img/symbol-defs-modal.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <label for="name" class="modal-lable">Ім'я</label>
+          <div class="modal-box">
+            <input type="text" id="name" class="modal-input" required>
+          <svg class="modal-icon">
+            <use href="./img/symbol-defs-modal.svg#icon-user"></use>
+          </svg>
+          </div>
+
+          <label for="phone" class="modal-lable">Телефон</label>
+          <div class="modal-box">
+            <input type="tel" id="phone" class="modal-input" required pattern="^\+?38?(0\d{9})$">
+          <svg class="modal-icon">
+            <use href="./img/symbol-defs-modal.svg#icon-phone"></use>
+          </svg>
+          </div>
+
+          <label for="mail" class="modal-lable">Пошта</label>
+          <div class="modal-box">
+          <input type="email" id="mail" class="modal-input" required>
+          <svg class="modal-icon">
+            <use href="./img/symbol-defs-modal.svg#icon-mail"></use>
+          </svg>
+          </div>
+
+           <label for="coment" class="modal-lable">Коментар</label>
+          <textarea class="modal-coment" name="" id="coment" placeholder="Введіть текст"></textarea>
+          <label class="modal-check">
+            <input type="checkbox" class="modal-checkbox" required>
+            <span class="modal-span">Погоджуюся з розсилкою та приймаю</span>
+            <a href="#" class="modal-link">Умови договору</a>
+          </label>
+          <button type="submit" class="modal-btn">Відправити</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
