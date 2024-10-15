@@ -22,7 +22,7 @@ body {
 header {
   padding-top: 24px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 .header-info {
   display: flex;
@@ -42,7 +42,7 @@ header {
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
-  line-height:  1.38;
+  line-height: 1.38;
   letter-spacing: 0.78px;
 }
 .header-list {
@@ -60,11 +60,11 @@ header {
   letter-spacing: 0.28px;
 }
 .header-link:hover,
-.header-link:focus{
+.header-link:focus {
   color: var(--accent-color);
 }
 .info-link:hover,
-.info-link:focus{
+.info-link:focus {
   color: var(--accent-color);
   .mail-icon {
     fill: #2196f3;
@@ -119,10 +119,11 @@ header {
   padding: 6px 25px;
 }
 .filter-button:hover,
-.filter-button:focus{
+.filter-button:focus {
   background: var(--accent-color);
   color: var(--main-background);
-  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 .filter-button {
   border-radius: 4px;
@@ -131,7 +132,7 @@ header {
   text-align: center;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.62; 
+  line-height: 1.62;
   letter-spacing: 0.48px;
   border: none;
 }
@@ -144,21 +145,21 @@ header {
   width: 100%;
 }
 .goods-wrap {
-  border: 1px solid #EEE;
+  border: 1px solid #eee;
   padding: 24px 20px;
-
 }
 .goods-item {
   flex-basis: calc((100% - 60px) / 3);
 }
 .goods-item:hover {
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 .goods-title {
   color: var(--title-color);
   font-size: 18px;
   font-weight: 700;
-  line-height: 2; 
+  line-height: 2;
   letter-spacing: 1.08px;
 }
 .goods-info {
@@ -210,7 +211,7 @@ address {
   margin-bottom: 9px;
 }
 .social-title {
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -226,7 +227,7 @@ address {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.10);
+  background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,4 +240,60 @@ address {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
+}
+.form-title {
+  color: var(--main-background);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.email-form {
+  display: flex;
+}
+.form-email {
+  width: 358px;
+  height: 50px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.48px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(33, 150, 243, 0);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.btn-box {
+  position: relative;
+}
+.form-btn {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.96px;
+  border-radius: 4px;
+  border: none;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 62px;
+}
+.form-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  fill: var(--main-background);
 }
