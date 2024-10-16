@@ -176,8 +176,10 @@ header {
 }
 .footer-box {
   display: flex;
-  gap: 70px;
   align-items: baseline;
+}
+.info-box {
+  margin-right: 70px;
 }
 .logo-footer {
   color: var(--main-background);
@@ -209,6 +211,9 @@ address {
 }
 .footer-info-item:first-child {
   margin-bottom: 9px;
+}
+.social-box {
+  margin-right: auto;
 }
 .social-title {
   color: #fff;

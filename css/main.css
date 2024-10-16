@@ -353,8 +353,10 @@ header {
 }
 .footer-box {
   display: flex;
-  gap: 70px;
   align-items: baseline;
+}
+.info-box {
+  margin-right: 70px;
 }
 .logo-footer {
   color: var(--main-background);
@@ -417,6 +419,9 @@ address {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
+}
+.form-box {
+  margin-left: auto;
 }
 .form-title {
   color: var(--main-background);
