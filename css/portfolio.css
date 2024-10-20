@@ -59,6 +59,9 @@ header {
   line-height: 1.14;
   letter-spacing: 0.28px;
 }
+.caren {
+  color: var(--accent-color);
+}
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
