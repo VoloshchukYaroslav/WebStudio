@@ -9,6 +9,7 @@
   --svg-fill: #afb1b8;
   --tell-color: rgba(255, 255, 255, 0.6);
 }
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -17,17 +18,21 @@
   margin-right: auto;
   outline: 1px solid green;
 }
+
 body {
   font-family: "Roboto";
 }
+
 header {
   padding-top: 24px;
-  padding-bottom: 25px;
+  padding-bottom: 4px;
 }
+
 .header-info {
   display: flex;
   align-items: center;
 }
+
 .logo {
   color: var(--logo-color);
   font-family: "Raleway";
@@ -37,6 +42,7 @@ header {
   letter-spacing: 0.78px;
   margin-right: 93px;
 }
+
 .span-logo {
   color: var(--accent-color);
   font-family: "Raleway";
@@ -45,13 +51,15 @@ header {
   line-height: 1.38;
   letter-spacing: 0.78px;
 }
+
 .header-list {
   display: flex;
   gap: 50px;
 }
-.span-header {
-  color: var(--accent-color);
+.header-item {
+  position: relative;
 }
+
 .header-link {
   color: var(--title-color);
   font-size: 14px;
@@ -59,38 +67,75 @@ header {
   line-height: 1.14;
   letter-spacing: 0.28px;
 }
+.header-link:hover::after {
+  opacity: 1;
+}
+
+.header-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  opacity: 0;
+}
+
 .caren {
   color: var(--accent-color);
+}
+.caren::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  opacity: 1;
 }
 .info-link {
   display: flex;
   align-items: center;
 }
+
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
 }
+
 .info-link:hover,
 .info-link:focus {
   color: var(--accent-color);
+
   .mail-icon {
     fill: #2196f3;
   }
+
   .phone-icon {
     fill: var(--accent-color);
   }
 }
+
 .info-list {
   display: flex;
   gap: 50px;
 }
+
 .info-item {
   display: flex;
   align-items: center;
 }
+
 .header-navigation {
   margin-right: auto;
 }
+
 .info-link {
   color: var(--text-color);
   font-size: 14px;
@@ -98,18 +143,21 @@ header {
   line-height: 1.14;
   letter-spacing: 0.28px;
 }
+
 .mail-icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: var(--text-color);
 }
+
 .phone-icon {
   width: 10px;
   height: 16px;
   fill: var(--text-color);
   margin-right: 10px;
 }
+
 .service {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -120,6 +168,7 @@ header {
   padding-bottom: 200px;
   text-align: center;
 }
+
 .service-title {
   width: 696px;
   color: var(--main-background);
@@ -132,6 +181,7 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
+
 .service-button {
   border: none;
   border-radius: 4px;
@@ -146,13 +196,16 @@ header {
   margin-top: 30px;
   padding: 10px 32px;
 }
+
 .about-us {
   padding-top: 94px;
 }
+
 .about-us-list {
   display: flex;
   gap: 30px;
 }
+
 .about-us-item::before {
   content: "";
   margin-bottom: 30px;
@@ -166,15 +219,19 @@ header {
   background-position: center;
   background-size: 70px;
 }
+
 .about-us-item:nth-child(2):before {
   background-image: url(../img/clock1.png);
 }
+
 .about-us-item:nth-child(3):before {
   background-image: url(../img/diagram1.png);
 }
+
 .about-us-item:nth-child(4):before {
   background-image: url(../img/astronaut1.png);
 }
+
 .about-us-title {
   color: var(--title-color);
   font-size: 14px;
@@ -184,6 +241,7 @@ header {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+
 .about-us-info {
   color: var(--text-color);
   font-size: 14px;
@@ -191,10 +249,12 @@ header {
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
+
 .our-work {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .our-work-tite {
   color: var(--title-color);
   text-align: center;
@@ -204,18 +264,22 @@ header {
   letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
+
 .our-work-list {
   display: flex;
   justify-content: space-between;
 }
+
 .our-work-item {
   text-align: center;
   position: relative;
 }
+
 .our-work-img {
   width: 370px;
   height: 294px;
 }
+
 .work-link {
   width: 370px;
   height: 70px;
@@ -233,11 +297,13 @@ header {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
+
 .team {
   background: var(--team-background);
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .team-title {
   color: var(--title-color);
   text-align: center;
@@ -247,13 +313,16 @@ header {
   letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
+
 .team-list {
   display: flex;
   gap: 30px;
 }
+
 .team-img {
   width: 270px;
 }
+
 .team-item-container {
   background: var(--main-background);
   padding-top: 30px;
@@ -261,11 +330,13 @@ header {
   border-radius: 0 0 4px 4px;
   text-align: center;
 }
+
 .team-item {
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
 }
+
 .team-list-title {
   color: var(--title-color);
   text-align: center;
@@ -275,6 +346,7 @@ header {
   letter-spacing: 0.48px;
   margin-bottom: 10px;
 }
+
 .team-list-info {
   color: var(--text-color);
   text-align: center;
@@ -284,11 +356,13 @@ header {
   letter-spacing: 0.48px;
   margin-bottom: 16px;
 }
+
 .icon-list {
   display: flex;
   gap: 10px;
   justify-content: center;
 }
+
 .icon-link {
   width: 44px;
   height: 44px;
@@ -297,25 +371,31 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 .team-icon {
   width: 20px;
   height: 20px;
   fill: var(--svg-fill);
 }
+
 .icon-link:hover,
 .icon-link:focus {
   background-color: var(--accent-color);
+
   .team-icon {
     fill: #fff;
   }
 }
+
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .clients > .container {
   text-align: center;
 }
+
 .clients-title {
   color: #212121;
   font-size: 36px;
@@ -324,10 +404,12 @@ header {
   letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
+
 .clients-list {
   display: flex;
   gap: 30px;
 }
+
 .clients-link {
   width: 170px;
   height: 92px;
@@ -337,30 +419,37 @@ header {
   align-items: center;
   justify-content: center;
 }
+
 .clients-icon {
   width: 106px;
   height: 60px;
   fill: var(--svg-fill);
 }
+
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--accent-color);
+
   .clients-icon {
     fill: #2196f3;
   }
 }
+
 .footer {
   background: var(--footer-background);
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer-box {
   display: flex;
   align-items: baseline;
 }
+
 .info-box {
   margin-right: 70px;
 }
+
 .logo-footer {
   color: var(--main-background);
   font-size: 26px;
@@ -368,6 +457,7 @@ header {
   line-height: 1.38;
   letter-spacing: 0.78px;
 }
+
 .address-info {
   color: var(--main-background);
   font-size: 14px;
@@ -375,6 +465,7 @@ header {
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
+
 .info-item-link {
   color: var(--tell-color);
   font-size: 14px;
@@ -382,16 +473,20 @@ header {
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
+
 address {
   margin-top: 20px;
   font-style: normal;
 }
+
 .footer-info-list {
   margin-top: 9px;
 }
+
 .footer-info-item:first-child {
   margin-bottom: 9px;
 }
+
 .social-title {
   color: #fff;
   font-size: 14px;
@@ -401,10 +496,12 @@ address {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+
 .social-list {
   display: flex;
   gap: 10px;
 }
+
 .social-link {
   width: 44px;
   height: 44px;
@@ -414,18 +511,22 @@ address {
   justify-content: center;
   align-items: center;
 }
+
 .social-icon {
   width: 20px;
   height: 20px;
   fill: var(--main-background);
 }
+
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
 }
+
 .form-box {
   margin-left: auto;
 }
+
 .form-title {
   color: var(--main-background);
   font-size: 14px;
@@ -435,9 +536,11 @@ address {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+
 .email-form {
   display: flex;
 }
+
 .form-email {
   width: 358px;
   height: 50px;
@@ -454,9 +557,11 @@ address {
   background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+
 .btn-box {
   position: relative;
 }
+
 .form-btn {
   color: #fff;
   text-align: center;
@@ -474,6 +579,7 @@ address {
   padding-left: 28px;
   padding-right: 62px;
 }
+
 .form-icon {
   width: 24px;
   height: 24px;
@@ -482,6 +588,7 @@ address {
   right: 28px;
   fill: var(--main-background);
 }
+
 /* ===================== */
 /* Modal window */
 .backdrop {
@@ -497,10 +604,12 @@ address {
   justify-content: center;
   align-items: center; */
 }
+
 .is-hidden {
   pointer-events: none;
   opacity: 0;
 }
+
 .modal {
   background-color: var(--main-background);
   position: absolute;
@@ -509,6 +618,7 @@ address {
   transform: translate(-50%, -50%);
   padding: 40px;
 }
+
 .modal-close {
   width: 30px;
   height: 30px;
@@ -519,18 +629,22 @@ address {
   top: 8px;
   right: 8px;
 }
+
 .modal-close:hover,
 .modal-close:focus {
   outline: 0px solid transparent;
+
   .modal-cross {
     fill: #2196f3;
   }
 }
+
 .modal-cross {
   width: 11px;
   height: 11px;
   fill: #000;
 }
+
 .modal-title {
   color: #212121;
   text-align: center;
@@ -539,6 +653,7 @@ address {
   line-height: 1.15;
   letter-spacing: 0.6px;
 }
+
 .modal-lable {
   color: var(--text-color);
   font-size: 12px;
@@ -548,9 +663,11 @@ address {
   margin-top: 12px;
   margin-bottom: 4px;
 }
+
 .modal-box {
   position: relative;
 }
+
 .modal-input {
   width: 448px;
   height: 40px;
@@ -561,15 +678,18 @@ address {
   padding-left: 42px;
   display: block;
 }
+
 .modal-input:hover,
 .modal-input:focus {
   border: none;
   outline: 1px solid var(--accent-color);
 }
+
 .modal-input:hover + .modal-icon,
 .modal-input:focus + .modal-icon {
   fill: var(--accent-color);
 }
+
 .modal-icon {
   position: absolute;
   top: 11px;
@@ -578,6 +698,7 @@ address {
   height: 18px;
   fill: #212121;
 }
+
 .modal-coment {
   display: block;
   width: 448px;
@@ -594,20 +715,24 @@ address {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
+
 .modal-coment:hover,
 .modal-coment:focus {
   border: none;
   outline: 1px solid var(--accent-color);
 }
+
 .modal-check {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .modal-checkbox {
   width: 16px;
   height: 15px;
 }
+
 .modal-span {
   color: var(--text-color);
   font-size: 14px;
@@ -617,6 +742,7 @@ address {
   margin-left: 8px;
   margin-right: 4px;
 }
+
 .modal-link {
   color: var(--accent-color);
   font-size: 14px;
@@ -625,6 +751,7 @@ address {
   letter-spacing: 0.42px;
   text-decoration-line: underline;
 }
+
 .modal-btn {
   color: var(--main-background);
   text-align: center;
@@ -641,6 +768,7 @@ address {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+
 .modal-btn:hover,
 .modal-btn:focus {
   outline: 0px solid;
