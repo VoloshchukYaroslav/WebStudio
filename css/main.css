@@ -41,9 +41,11 @@ header {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link:hover::after {
   opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link::after {
@@ -57,6 +59,7 @@ header {
   background-color: var(--accent-color);
   border-radius: 2px;
   opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .caren {
@@ -117,6 +120,7 @@ header {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-icon {
@@ -170,6 +174,8 @@ header {
   letter-spacing: 0.96px;
   margin-top: 30px;
   padding: 10px 32px;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .about-us {
@@ -345,6 +351,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon {
@@ -399,6 +406,7 @@ header {
   width: 106px;
   height: 60px;
   fill: var(--svg-fill);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -485,6 +493,7 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -574,6 +583,8 @@ address {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* can use */
   /* display: flex;
   justify-content: center;
@@ -583,6 +594,8 @@ address {
 .is-hidden {
   pointer-events: none;
   opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {

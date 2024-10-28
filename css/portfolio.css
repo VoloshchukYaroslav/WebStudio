@@ -29,6 +29,9 @@
   line-height: 1.62;
   letter-spacing: 0.48px;
   border: none;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .goods-list {
   display: flex;
@@ -46,6 +49,7 @@
   flex-basis: calc((100% - 60px) / 3);
   position: relative;
   overflow: hidden;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .goods-item:hover {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
@@ -54,6 +58,7 @@
 .goods-item:hover {
   .img-info {
     opacity: 1;
+    transform: translate(0);
   }
 }
 .goods-title {
@@ -84,4 +89,7 @@
   letter-spacing: 0.54px;
   opacity: 0;
   padding: 63px 24px;
+  transform: translate(0, 100%);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
