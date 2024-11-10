@@ -1,0 +1,113 @@
+.filter {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    border-top: 1px solid var(--text-color);
+}
+
+.filter-list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filter-button {
+    padding: 6px 25px;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    background: var(--accent-color);
+    color: var(--main-background);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1),
+        0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
+
+.filter-button {
+    border-radius: 4px;
+    background: var(--team-background);
+    color: var(--title-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.48px;
+    border: none;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.goods-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.goods-img {
+    width: 100%;
+}
+
+.goods-wrap {
+    border: 1px solid #eee;
+    padding: 24px 20px;
+}
+
+.goods-item {
+    flex-basis: calc((100% - 60px) / 3);
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.goods-item:hover {
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+.goods-item:hover {
+    .img-info {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.goods-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.goods-title {
+    color: var(--title-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 1.08px;
+}
+
+.goods-info {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.87;
+    letter-spacing: 0.48px;
+}
+
+.img-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--main-background);
+    background-color: rgba(33, 150, 243, 0.9);
+    width: 100%;
+    height: 294px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.54px;
+    opacity: 0;
+    padding: 63px 24px;
+    transform: translate(0, 100%);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
