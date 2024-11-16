@@ -1,15 +1,16 @@
 .service {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../img/service.jpg);
-    padding-top: 200px;
-    padding-bottom: 200px;
-    text-align: center;
-}
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/service.jpg);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 
-.service-title {
+  &__title {
     width: 696px;
-    color: var(--main-background);
+    color: $main-background;
     text-align: center;
     font-size: 44px;
     font-weight: 900px;
@@ -18,14 +19,14 @@
     text-transform: uppercase;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 
-.service-button {
+  &__button {
     border: none;
     border-radius: 4px;
-    background: var(--accent-color);
+    background: $accent-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--main-background);
+    color: $main-background;
     text-align: center;
     font-size: 16px;
     font-weight: 700;
@@ -34,5 +35,6 @@
     margin-top: 30px;
     padding: 10px 32px;
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }

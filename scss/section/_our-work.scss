@@ -1,34 +1,33 @@
-.our-work {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+.work {
+  padding-top: 94px;
+  padding-bottom: 94px;
 
-.our-work-tite {
-    color: var(--title-color);
+  &__tite {
+    color: $title-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.16;
     letter-spacing: 1.08px;
     margin-bottom: 50px;
-}
+  }
 
-.our-work-list {
+  &__list {
     display: flex;
     justify-content: space-between;
-}
+  }
 
-.our-work-item {
+  &__item {
     text-align: center;
     position: relative;
-}
+  }
 
-.our-work-img {
+  &__img {
     width: 370px;
     height: 294px;
-}
+  }
 
-.work-link {
+  &__link {
     width: 370px;
     height: 70px;
     position: absolute;
@@ -38,10 +37,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--main-background);
+    color: $main-background;
     font-size: 14px;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+  }
 }

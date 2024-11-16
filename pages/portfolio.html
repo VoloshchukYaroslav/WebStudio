@@ -25,43 +25,43 @@
     <link rel="stylesheet" href="../style/main.min.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <div class="header-info">
+        <div class="header__info">
           <a
-            href="../index.html"
-            class="logo animate__animated animate__heartBeat"
-            ><span class="span-logo">Web</span>Studio</a
+            class="header__logo animate__animated animate__heartBeat"
+            href="./index.html"
+            >Web<span class="header__span">Studio</span></a
           >
-          <nav class="header-navigation">
-            <ul class="header-list">
-              <li class="header-item">
-                <a href="../index.html" class="header-link">Студія</a>
+          <nav class="header__navigation">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="../index.html" class="header__link">Студія</a>
               </li>
-              <li class="header-item">
-                <a href="../pages/portfolio.html" class="header-link caren"
+              <li class="header__item">
+                <a href="../pages/portfolio.html" class="header__link caren"
                   >Портфоліо</a
                 >
               </li>
-              <li class="header-item">
-                <a href="../pages/contacts.html" class="header-link"
+              <li class="header__item">
+                <a href="../pages/contacts.html" class="header__link"
                   >Контакти</a
                 >
               </li>
             </ul>
           </nav>
-          <ul class="info-list">
-            <li class="info-item">
-              <a href="mailto:info@devstudio.com" class="info-link"
-                ><svg class="mail-icon">
+          <ul class="info__list">
+            <li class="info__item">
+              <a href="mailto:info@devstudio.com" class="info__link"
+                ><svg class="info__icon">
                   <use href="../img/symbol-defs.svg#icon-mail"></use>
                 </svg>
                 info@devstudio.com</a
               >
             </li>
-            <li class="info-item">
-              <a href="tel:+380961111111" class="info-link">
-                <svg class="phone-icon">
+            <li class="info__item">
+              <a href="tel:+380961111111" class="info__link">
+                <svg class="info__icon">
                   <use href="../img/symbol-defs.svg#icon-smartphone"></use></svg
                 >+38 096 111 11 11</a
               >
@@ -73,237 +73,255 @@
     <main>
       <section class="filter">
         <div class="container">
-          <ul class="filter-list">
-            <li class="filter-item">
-              <button type="button" class="filter-button">Усі</button>
+          <ul class="filter__list">
+            <li class="filter__item">
+              <button type="button" class="filter__button">Усі</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="filter-button">Веб-сайти</button>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Веб-сайти</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="filter-button">Додатки</button>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Додатки</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="filter-button">Дизайн</button>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Дизайн</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="filter-button">Маркетинг</button>
-            </li>
-          </ul>
-          <ul class="goods-list">
-            <li class="goods-item">
-              <div class="goods-box">
-                <img src="../img/laptop.jpg" alt="laptop" class="goods-img" />
-                <p class="img-info">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <div class="goods-wrap">
-                <h1 class="goods-title">Технокряк</h1>
-                <p class="goods-info">Веб-сайт</p>
-              </div>
-            </li>
-            <li class="goods-item">
-              <div class="goods-box">
-                <img
-                  src="../img/basketball.jpg"
-                  alt="basketball"
-                  class="goods-img"
-                />
-                <p class="img-info">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <div class="goods-wrap">
-                <h1 class="goods-title">Постер New Orlean vs Golden Star</h1>
-                <p class="goods-info">Дизайн</p>
-              </div>
-            </li>
-            <li class="goods-item">
-              <div class="goods-box">
-                <img src="../img/seafood.jpg" alt="seafood" class="goods-img" />
-                <p class="img-info">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <div class="goods-wrap">
-                <h1 class="goods-title">Ресторан Seafood</h1>
-                <p class="goods-info">Додаток</p>
-              </div>
-            </li>
-            <li class="goods-item">
-              <div class="goods-box">
-                <img
-                  src="../img/headphones.jpg"
-                  alt="headphones"
-                  class="goods-img"
-                />
-                <p class="img-info">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <div class="goods-wrap">
-                <h1 class="goods-title">Проєкт Prime</h1>
-                <p class="goods-info">Маркетинг</p>
-              </div>
-            </li>
-            <li class="goods-item">
-              <div class="goods-box">
-                <img src="../img/boxes.jpg" alt="boxes" class="goods-img" />
-                <p class="img-info">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <div class="goods-wrap">
-                <h1 class="goods-title">Проєкт Boxes</h1>
-                <p class="goods-info">Додаток</p>
-              </div>
-            </li>
-            <li class="goods-item">
-              <div class="goods-box">
-                <img src="../img/monitor.jpg" alt="monitor" class="goods-img" />
-                <p class="img-info">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <div class="goods-wrap">
-                <h1 class="goods-title">Inspiration has no Borders</h1>
-                <p class="goods-info">Веб-сайт</p>
-              </div>
-            </li>
-            <li class="goods-item">
-              <div class="goods-box">
-                <img src="../img/book.jpg" alt="book" class="goods-img" />
-                <p class="img-info">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <div class="goods-wrap">
-                <h1 class="goods-title">Видання Limited Edition</h1>
-                <p class="goods-info">Дизайн</p>
-              </div>
-            </li>
-            <li class="goods-item">
-              <div class="goods-box">
-                <img src="../img/tag.jpg" alt="tag" class="goods-img" />
-                <p class="img-info">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <div class="goods-wrap">
-                <h1 class="goods-title">Проєкт LAB</h1>
-                <p class="goods-info">Маркетинг</p>
-              </div>
-            </li>
-            <li class="goods-item">
-              <div class="goods-box">
-                <img src="../img/busness.jpg" alt="busness" class="goods-img" />
-                <p class="img-info">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <div class="goods-wrap">
-                <h1 class="goods-title">Growing Business</h1>
-                <p class="goods-info">Додаток</p>
-              </div>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Маркетинг</button>
             </li>
           </ul>
+          <div class="goods">
+            <ul class="goods__list">
+              <li class="goods__item">
+                <div class="goods__box">
+                  <img
+                    src="../img/laptop.jpg"
+                    alt="laptop"
+                    class="goods__img"
+                  />
+                  <p class="goods__about">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="goods__wrap">
+                  <h1 class="goods__title">Технокряк</h1>
+                  <p class="goods__info">Веб-сайт</p>
+                </div>
+              </li>
+              <li class="goods__item">
+                <div class="goods__box">
+                  <img
+                    src="../img/basketball.jpg"
+                    alt="basketball"
+                    class="goods__img"
+                  />
+                  <p class="goods__about">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="goods__wrap">
+                  <h1 class="goods__title">Постер New Orlean vs Golden Star</h1>
+                  <p class="goods__info">Дизайн</p>
+                </div>
+              </li>
+              <li class="goods__item">
+                <div class="goods__box">
+                  <img
+                    src="../img/seafood.jpg"
+                    alt="seafood"
+                    class="goods__img"
+                  />
+                  <p class="goods__about">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="goods__wrap">
+                  <h1 class="goods__title">Ресторан Seafood</h1>
+                  <p class="goods__info">Додаток</p>
+                </div>
+              </li>
+              <li class="goods__item">
+                <div class="goods__box">
+                  <img
+                    src="../img/headphones.jpg"
+                    alt="headphones"
+                    class="goods__img"
+                  />
+                  <p class="goods__about">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="goods__wrap">
+                  <h1 class="goods__title">Проєкт Prime</h1>
+                  <p class="goods__info">Маркетинг</p>
+                </div>
+              </li>
+              <li class="goods__item">
+                <div class="goods__box">
+                  <img src="../img/boxes.jpg" alt="boxes" class="goods__img" />
+                  <p class="goods__about">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="goods__wrap">
+                  <h1 class="goods__title">Проєкт Boxes</h1>
+                  <p class="goods__info">Додаток</p>
+                </div>
+              </li>
+              <li class="goods__item">
+                <div class="goods__box">
+                  <img
+                    src="../img/monitor.jpg"
+                    alt="monitor"
+                    class="goods-img"
+                  />
+                  <p class="goods__about">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="goods__wrap">
+                  <h1 class="goods__title">Inspiration has no Borders</h1>
+                  <p class="goods__info">Веб-сайт</p>
+                </div>
+              </li>
+              <li class="goods__item">
+                <div class="goods__box">
+                  <img src="../img/book.jpg" alt="book" class="goods__img" />
+                  <p class="goods__about">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="goods__wrap">
+                  <h1 class="goods__title">Видання Limited Edition</h1>
+                  <p class="goods__info">Дизайн</p>
+                </div>
+              </li>
+              <li class="goods__item">
+                <div class="goods__box">
+                  <img src="../img/tag.jpg" alt="tag" class="goods__img" />
+                  <p class="goods__about">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="goods__wrap">
+                  <h1 class="goods__title">Проєкт LAB</h1>
+                  <p class="goods__info">Маркетинг</p>
+                </div>
+              </li>
+              <li class="goods__item">
+                <div class="goods__box">
+                  <img
+                    src="../img/busness.jpg"
+                    alt="busness"
+                    class="goods__img"
+                  />
+                  <p class="goods__about">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="goods__wrap">
+                  <h1 class="goods__title">Growing Business</h1>
+                  <p class="goods__info">Додаток</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-box">
-        <div class="info-box">
-          <a href="../index.html" class="logo-footer"
-            ><span class="span-logo">Web</span>Studio</a
+      <div class="container footer__box">
+        <div class="info__box">
+          <a href="../index.html" class="info__logo"
+            ><span class="info__span">Web</span>Studio</a
           >
           <address class="address">
             <a
               href="https://www.google.com/maps/place/вулиця+Лесі+Українки,+26,+Київ,+02000/@50.5190835,30.4336481,17z/data=!3m1!4b1!4m10!1m2!2m1!1z0LwuINCa0LjRl9CyLCDQv9GALdGCINCb0LXRgdGWINCj0LrRgNCw0ZfQvdC60LgsIDI2!3m6!1s0x40d4d29b9e369069:0xff64663a5fd75cd5!8m2!3d50.5190802!4d30.4385136!15sCjPQvC4g0JrQuNGX0LIsINC_0YAt0YIg0JvQtdGB0ZYg0KPQutGA0LDRl9C90LrQuCwgMjaSARBnZW9jb2RlZF9hZGRyZXNz4AEA!16s%2Fg%2F11hz60_tnl?entry=ttu"
               target="_blank"
-              class="address-info"
+              class="address__info"
               >м. Київ, пр-т Лесі Українки, 26</a
             >
-            <ul class="footer-info-list">
-              <li class="footer-info-item">
-                <a href="mailto:info@devstudio.com" class="info-item-link"
+            <ul class="address__list">
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="address__link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="footer-info-item">
-                <a href="tel:+380961111111" class="info-item-link"
+              <li class="address__item">
+                <a href="tel:+380961111111" class="address__link"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="social-box">
-          <h2 class="social-title">приєднуйтесь</h2>
-          <ul class="social-list">
-            <li class="social-item">
-              <a href="https://www.instagram.com" class="social-link">
-                <svg class="social-icon">
+        <div class="social__box">
+          <h2 class="social__title">приєднуйтесь</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="https://www.instagram.com" class="social__link">
+                <svg class="social__icon">
                   <use href="../img/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a href="https://x.com" class="social-link">
-                <svg class="social-icon">
+            <li class="social__item">
+              <a href="https://x.com" class="social__link">
+                <svg class="social__icon">
                   <use href="../img/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
+            <li class="social__item">
               <a
                 href="https://www.facebook.com/?locale=uk_UA"
-                class="social-link"
+                class="social__link"
               >
-                <svg class="social-icon">
+                <svg class="social__icon">
                   <use href="../img/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a href="https://ua.linkedin.com" class="social-link">
-                <svg class="social-icon">
+            <li class="social__item">
+              <a href="https://ua.linkedin.com" class="social__link">
+                <svg class="social__icon">
                   <use href="../img/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="form-box">
-          <h2 class="form-title">Підпишіться на розсилку</h2>
-          <form class="email-form">
+        <div class="form__box">
+          <h2 class="form__title">Підпишіться на розсилку</h2>
+          <form class="form__email">
             <input
               type="email"
               placeholder="E-mail"
-              class="form-email"
+              class="form__input"
               required
             />
-            <div class="btn-box">
-              <button type="submit" class="form-btn">Підписатися</button>
-              <svg class="form-icon">
+            <div class="btn__box">
+              <button type="submit" class="form__btn">Підписатися</button>
+              <svg class="form__icon">
                 <use href="./img/symbol-defs.svg#icon-icon-send"></use>
               </svg>
             </div>

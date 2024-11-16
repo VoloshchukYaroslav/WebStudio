@@ -1,69 +1,68 @@
 .team {
-    background: var(--team-background);
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+  background: $team-background;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
-.team-title {
-    color: var(--title-color);
+  &__title {
+    color: $title-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.16;
     letter-spacing: 1.08px;
     margin-bottom: 50px;
-}
+  }
 
-.team-list {
+  &__list {
     display: flex;
     gap: 30px;
-}
+  }
 
-.team-img {
-    width: 270px;
-}
-
-.team-item-container {
-    background: var(--main-background);
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-radius: 0 0 4px 4px;
-    text-align: center;
-}
-
-.team-item {
+  &__item {
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
     border-radius: 0 0 4px 4px;
+  }
+
+  &__img {
+    width: 270px;
+  }
 }
 
-.team-list-title {
-    color: var(--title-color);
+.box {
+  background: $main-background;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 0 0 4px 4px;
+  text-align: center;
+
+  &__title {
+    color: $title-color;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.18;
     letter-spacing: 0.48px;
     margin-bottom: 10px;
-}
+  }
 
-.team-list-info {
-    color: var(--text-color);
+  &__info {
+    color: $text-color;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.18;
     letter-spacing: 0.48px;
     margin-bottom: 16px;
-}
+  }
 
-.icon-list {
+  &__list {
     display: flex;
     gap: 10px;
     justify-content: center;
-}
+  }
 
-.icon-link {
+  &__link {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -71,19 +70,20 @@
     justify-content: center;
     align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.team-icon {
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+
+      .box__icon {
+        fill: $main-background;
+      }
+    }
+  }
+
+  &__icon {
     width: 20px;
     height: 20px;
-    fill: var(--svg-fill);
-}
-
-.icon-link:hover,
-.icon-link:focus {
-    background-color: var(--accent-color);
-
-    .team-icon {
-        fill: #fff;
-    }
+    fill: $svg-fill;
+  }
 }

@@ -1,13 +1,12 @@
-.about-us {
-    padding-top: 94px;
-}
+.about {
+  padding-top: 94px;
 
-.about-us-list {
+  &__list {
     display: flex;
     gap: 30px;
-}
+  }
 
-.about-us-item::before {
+  &__item::before {
     content: "";
     margin-bottom: 30px;
     width: 270px;
@@ -19,34 +18,35 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px;
-}
+  }
 
-.about-us-item:nth-child(2):before {
+  &__item:nth-child(2):before {
     background-image: url(../img/clock1.png);
-}
+  }
 
-.about-us-item:nth-child(3):before {
+  &__item:nth-child(3):before {
     background-image: url(../img/diagram1.png);
-}
+  }
 
-.about-us-item:nth-child(4):before {
+  &__item:nth-child(4):before {
     background-image: url(../img/astronaut1.png);
-}
+  }
 
-.about-us-title {
-    color: var(--title-color);
+  &__title {
+    color: $title-color;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 10px;
-}
+  }
 
-.about-us-info {
-    color: var(--text-color);
+  &__info {
+    color: $text-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
+  }
 }
