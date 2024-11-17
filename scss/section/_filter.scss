@@ -12,14 +12,14 @@
 
   &__button {
     padding: 6px 25px;
-  }
 
-  &button:hover,
-  &button:focus {
-    background: $accent-color;
-    color: $main-background;
-    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1),
-      0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+    &:hover,
+    &:focus {
+      background: $accent-color;
+      color: $main-background;
+      box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1),
+        0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+    }
   }
 
   &__button {
@@ -57,7 +57,7 @@
     }
 
     &:hover {
-      .img-info {
+      .goods__about {
         opacity: 1;
         transform: translate(0);
       }

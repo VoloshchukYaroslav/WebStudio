@@ -445,7 +445,7 @@ body {
 .filter__button {
   padding: 6px 25px;
 }
-.filterbutton:hover, .filterbutton:focus {
+.filter__button:hover, .filter__button:focus {
   background: #2196f3;
   color: #fff;
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
@@ -477,7 +477,7 @@ body {
 .goods__item:hover {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
-.goods__item:hover .img-info {
+.goods__item:hover .goods__about {
   opacity: 1;
   transform: translate(0);
 }
@@ -642,6 +642,9 @@ body {
   background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+.form__container {
+  position: relative;
+}
 .form__btn {
   color: #fff;
   text-align: center;
@@ -668,10 +671,6 @@ body {
   fill: #fff;
 }
 
-.btn__box {
-  position: relative;
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -694,15 +693,14 @@ body {
 }
 
 .modal {
-  background-color: var(--main-background);
+  background-color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
 }
-
-.modal-close {
+.modal__close {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -712,23 +710,18 @@ body {
   top: 8px;
   right: 8px;
 }
-
-.modal-close:hover,
-.modal-close:focus {
+.modal__close:hover, .modal__close:focus {
   outline: 0px solid transparent;
 }
-.modal-close:hover .modal-cross,
-.modal-close:focus .modal-cross {
+.modal__close:hover .modal__cross, .modal__close:focus .modal__cross {
   fill: #2196f3;
 }
-
-.modal-cross {
+.modal__cross {
   width: 11px;
   height: 11px;
   fill: #000;
 }
-
-.modal-title {
+.modal__title {
   color: #212121;
   text-align: center;
   font-size: 20px;
@@ -736,9 +729,8 @@ body {
   line-height: 1.15;
   letter-spacing: 0.6px;
 }
-
-.modal-lable {
-  color: var(--text-color);
+.modal__lable {
+  color: #757575;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.16;
@@ -746,12 +738,10 @@ body {
   margin-top: 12px;
   margin-bottom: 4px;
 }
-
-.modal-box {
+.modal__box {
   position: relative;
 }
-
-.modal-input {
+.modal__input {
   width: 448px;
   height: 40px;
   border-radius: 4px;
@@ -761,19 +751,14 @@ body {
   padding-left: 42px;
   display: block;
 }
-
-.modal-input:hover,
-.modal-input:focus {
+.modal__input:hover, .modal__input:focus {
   border: none;
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid #2196f3;
 }
-
-.modal-input:hover + .modal-icon,
-.modal-input:focus + .modal-icon {
-  fill: var(--accent-color);
+.modal__input:hover + .modal__icon, .modal__input:focus + .modal__icon {
+  fill: #2196f3;
 }
-
-.modal-icon {
+.modal__icon {
   position: absolute;
   top: 11px;
   left: 12px;
@@ -781,8 +766,7 @@ body {
   height: 18px;
   fill: #212121;
 }
-
-.modal-coment {
+.modal__coment {
   display: block;
   width: 448px;
   height: 120px;
@@ -798,26 +782,21 @@ body {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
-
-.modal-coment:hover,
-.modal-coment:focus {
+.modal__coment:hover, .modal__coment:focus {
   border: none;
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid #2196f3;
 }
-
-.modal-check {
+.modal__check {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.modal-checkbox {
+.modal__checkbox {
   width: 16px;
   height: 15px;
 }
-
-.modal-span {
-  color: var(--text-color);
+.modal__span {
+  color: #757575;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -825,9 +804,8 @@ body {
   margin-left: 8px;
   margin-right: 4px;
 }
-
-.modal-link {
-  color: var(--accent-color);
+.modal__link {
+  color: #2196f3;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -835,9 +813,8 @@ body {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
-
-.modal-btn {
-  color: var(--main-background);
+.modal__btn {
+  color: #fff;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
@@ -849,12 +826,10 @@ body {
   margin-right: 124px;
   border-radius: 4px;
   border: none;
-  background: var(--accent-color);
+  background: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-
-.modal-btn:hover,
-.modal-btn:focus {
+.modal__btn:hover, .modal__btn:focus {
   outline: 0px solid;
   background: #188ce8;
 }/*# sourceMappingURL=main.css.map */
