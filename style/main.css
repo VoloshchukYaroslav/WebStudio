@@ -20,7 +20,7 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: auto;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -33,8 +33,20 @@ body {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-left: 15px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .header__info {
   display: flex;
@@ -56,8 +68,19 @@ body {
   margin-right: auto;
 }
 .header__list {
-  display: flex;
-  gap: 50px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__list {
+    display: flex;
+    gap: 51px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__list {
+    display: flex;
+    gap: 53px;
+  }
 }
 .header__item {
   position: relative;
@@ -122,9 +145,23 @@ body {
   fill: #2196f3;
 }
 .info__list {
-  display: flex;
-  gap: 50px;
-  margin-left: auto;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .info__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info__list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: auto;
+  }
 }
 .info__item {
   display: flex;
@@ -142,6 +179,11 @@ body {
   letter-spacing: 0.28px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .info__link {
+    line-height: 1.3;
+  }
+}
 .info__icon {
   width: 16px;
   height: 12px;
@@ -151,21 +193,29 @@ body {
 
 .service {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/service.jpg);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
 }
 .service__title {
-  width: 696px;
+  width: 360px;
   color: #fff;
   text-align: center;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900px;
-  line-height: 1.36;
-  letter-spacing: 2.64px;
+  line-height: 1.61;
+  letter-spacing: 1.56px;
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .service__title {
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+    width: 696px;
+  }
 }
 .service__button {
   border: none;
@@ -179,21 +229,48 @@ body {
   line-height: 1.87;
   letter-spacing: 0.96px;
   margin-top: 30px;
-  padding: 10px 32px;
+  padding: 10px 24px;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .service__button {
+    padding: 10px 30px;
+  }
 }
 
 .about {
-  padding-top: 94px;
+  padding-top: 60px;
 }
 .about__list {
   display: flex;
+  flex-direction: column;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .about__list {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__item {
+    flex-basis: calc((100% - 30px) / 3);
+    position: relative;
+  }
 }
 .about__item::before {
   content: "";
   margin-bottom: 30px;
-  width: 270px;
+  width: 450px;
   height: 120px;
   border-radius: 4px;
   background: #f5f4fa;
@@ -202,6 +279,18 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70px;
+}
+@media screen and (min-width: 768px) {
+  .about__item::before {
+    width: 354px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__item::before {
+    width: 270px;
+    height: 120px;
+  }
 }
 .about__item:nth-child(2):before {
   background-image: url(../img/clock1.png);
@@ -219,6 +308,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 10px;
 }
 .about__info {
