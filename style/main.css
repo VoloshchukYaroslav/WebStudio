@@ -322,6 +322,12 @@ body {
 .work {
   padding-top: 94px;
   padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: contents;
+  }
 }
 .work__tite {
   color: #212121;
@@ -378,14 +384,44 @@ body {
 }
 .team__list {
   display: flex;
+  flex-direction: column;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    flex-wrap: nowrap;
+  }
 }
 .team__item {
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
 }
+@media screen and (min-width: 768px) {
+  .team__item {
+    flex-basis: calc((100% - 30px) / 3);
+    position: relative;
+  }
+}
 .team__img {
-  width: 270px;
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .team__img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__img {
+    width: 270px;
+  }
 }
 
 .box {
@@ -456,10 +492,21 @@ body {
 }
 .clients__list {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 30px;
+  align-items: center;
+}
+.clients__item {
+  flex-basis: calc(100% - 30px)/2;
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    flex-basis: calc(100% - 30px)/3;
+  }
 }
 .clients__link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
@@ -472,6 +519,16 @@ body {
 }
 .clients__link:hover .clients__icon, .clients__link:focus .clients__icon {
   fill: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 .clients__icon {
   width: 106px;
@@ -497,10 +554,21 @@ body {
 }
 .clients__list {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 30px;
+  align-items: center;
+}
+.clients__item {
+  flex-basis: calc(100% - 30px)/2;
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    flex-basis: calc(100% - 30px)/3;
+  }
 }
 .clients__link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
@@ -513,6 +581,16 @@ body {
 }
 .clients__link:hover .clients__icon, .clients__link:focus .clients__icon {
   fill: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 .clients__icon {
   width: 106px;
@@ -622,7 +700,14 @@ body {
 
 .footer__box {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__box {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .info__box {
@@ -630,6 +715,7 @@ body {
 }
 .info__logo {
   color: #fff;
+  font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
   line-height: 1.38;
@@ -665,7 +751,18 @@ body {
 }
 
 .social__box {
-  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .social__box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 165px;
+  }
 }
 
 .social__title {
@@ -701,7 +798,10 @@ body {
 }
 
 .form__box {
-  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 60px;
 }
 
 .form__title {
@@ -715,9 +815,10 @@ body {
 }
 .form__email {
   display: flex;
+  flex-direction: column;
 }
 .form__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
@@ -747,6 +848,7 @@ body {
   background: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   margin-left: 12px;
+  margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 28px;
@@ -756,8 +858,8 @@ body {
   width: 24px;
   height: 24px;
   position: absolute;
-  top: 13px;
-  right: 28px;
+  top: 33px;
+  left: 288px;
   fill: #fff;
 }
 
