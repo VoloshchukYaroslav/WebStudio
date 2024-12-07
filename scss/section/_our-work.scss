@@ -4,7 +4,7 @@
   display: none;
 
   @media screen and (min-width: 1200px) {
-    display: contents;
+    display: flex;
   }
 
   &__tite {
@@ -19,7 +19,7 @@
 
   &__list {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
   }
 
   &__item {
