@@ -1,33 +1,35 @@
 .team {
   background: $team-background;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__title {
     color: $title-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.16;
-    letter-spacing: 1.08px;
-    margin-bottom: 50px;
+    line-height: 1.17;
+    letter-spacing: 0.84px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      letter-spacing: 1.08px;
+      line-height: 1.16;
+      margin-bottom: 50px;
+    }
   }
 
   &__list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 30px;
-
-    @media screen and (min-width: 768px) {
-      display: flex;
-      flex-direction: row;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-
-    @media screen and (min-width: 1200px) {
-      flex-wrap: nowrap;
-    }
   }
 
   &__item {
@@ -36,8 +38,10 @@
     border-radius: 0 0 4px 4px;
 
     @media screen and (min-width: 768px) {
-      flex-basis: calc((100% - 30px) / 3);
-      position: relative;
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 90px) / 4);
     }
   }
 
