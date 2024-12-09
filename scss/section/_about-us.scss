@@ -14,7 +14,7 @@
   }
 
   &__item {
-    &__:before {
+    &:before {
       content: "";
       margin-bottom: 30px;
       width: 100%;
